@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="author" content="Admin SMK Badrul Ulum">
+<title>SMK Badrul Ulum | Beranda</title>
+<link rel="stylesheet" href="https://sma.sekolahjagakarsa.sch.id//template/frontend/assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://sma.sekolahjagakarsa.sch.id//template/frontend/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="https://sma.sekolahjagakarsa.sch.id//template/frontend/assets/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://sma.sekolahjagakarsa.sch.id//template/frontend/assets/css/style.css">
+<link rel="stylesheet" href="https://sma.sekolahjagakarsa.sch.id//template/frontend/assets/datatables-1.10.22/1.10.22/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
+<link rel="shortcut icon" type="image/x-icon" href="logo-smk.jpeg">
+<link rel="stylesheet" href="https://sma.sekolahjagakarsa.sch.id//template/frontend/assets/lightbox/css/lightbox.min.css">
+<style>
+/* Menghapus/Menyembunyikan semua ikon kalender/tanggal pada kotak berita */
+.section-thumbnail .tanggal {
+    display: none !important;
+}
+.video-wrapper {
+    position: relative;
+}
+.video-wrapper iframe {
+    pointer-events: none;
+}
+.youtube-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: block;
+}
+</style>
+</head>
+<body>
+<section>
+<div id="topbar">
+<div class="container">
+<div class="row">
+<div class="col-lg-10 col-md-8 col-sm-12">
+<ul class="top-nav kiri">
+<li><a href="#"><i class="fas fa-phone"></i>  081217539384</a></li>
+<li><a href="#"><i class="fas fa-envelope"></i>
+smkbadrululum@gmail.com</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-12">
+<ul class="top-nav kanan">
+<li><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="https://tiktok.com/@smk.badrul.ulum0" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+<li><a href="https://www.youtube.com/@LpiBadrululum" target="_blank"><i class="fab fa-youtube"></i></a></li>
+</ul>
+</div>
+</div> <!-- .row -->
+</div> <!-- .container -->
+</div> <!-- #topbar -->
+</section>
+<header>
+<div id="head">
+<div class="container">
+<div class="row">
+<div class="col-md-8">
+<div class="brand">
+<a href="index_smk.html">
+<img src="logo-smk.jpeg" width="70px" style="mix-blend-mode: multiply; filter: contrast(1.2) brightness(1.1); clip-path: inset(1px); border: none; box-shadow: none;">
+</a>
+<div class="brand-title">
+<a href="#">
+<h1>SMK Badrul Ulum</h1>
+<h4>LEMBAGA PENDIDIKAN ISLAM BADRUL ULUM</h4>
+</a>
+</div>
+</div>
+</div>
+<div class="col-md-4 searchbox">
+<form action="" method="post">
+<div class="input-group">
+<input class="form-control" type="text" name="keyword" placeholder="Ketik disini.." aria-label="Tombol Cari " aria-describedby="tombol-cari">
+<input type="hidden" name="csrf_test_name" value="6152cafbe62ed89b319a412de0caa2ed"> <div class="input-group-append">
+<button class="btn btn-utama" type="submit" name="submit" id="tombol-cari"><i class="fas fa-search"></i></button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<!-- menu -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<div class="container">
+<!-- <a class="navbar-brand">Brand</a> -->
+<button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="fa fa-bars"></span> Menu
+</button>
+<div id="my-nav" class="collapse navbar-collapse">
+<ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a class="nav-link active" href="#">Beranda</a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Profil Sekolah
+</a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="#">Sejarah</a>
+<a class="dropdown-item" href="visi_misi_smk.html">Visi dan Misi</a>
+<a class="dropdown-item" href="#">Struktur Akademik</a>
+<a class="dropdown-item" href="#">Struktur Tatausaha</a>
+<a class="dropdown-item" href="#">Struktur Komite</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Data Sekolah
+</a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="#">Peserta Didik</a>
+<a class="dropdown-item" href="#">Guru</a>
+<a class="dropdown-item" href="#">Tata Usaha</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Kegiatan
+</a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="#">Berita</a>
+<a class="dropdown-item" href="#">Pengumuman</a>
+<a class="dropdown-item" href="#">Foto</a>
+<a class="dropdown-item" href="#">Video</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Jurusan
+</a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="#">Rekayasa Perangkat Lunak (RPL)</a>
+<a class="dropdown-item" href="#">Teknik Komputer dan Jaringan (TKJ)</a>
+<a class="dropdown-item" href="#">Multimedia (MM)</a>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link " href="#">SPMB</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " href="#">Unduh</a>
+</li>
+<li class="nav-item">
+<a class="nav-link " href="peta_sekolah_smk.html">Peta Sekolah</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#"><i class="fas fa-sign-in-alt mr-2"></i>Masuk</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<section>
+<div id="hero-area">
+<div id="hero-area-nav"></div>
+<div class="owl-carousel" id="hero-area-slider">
+<div class="hero-area-item">
+<img class="img-fluid" src="foto_beranda1.jpg" onerror="this.onerror=null; this.src='foto_beranda1.jpeg'; if(this.src.endsWith('jpeg')) { this.onerror=function(){this.src='foto_beranda1.png'}; }">
+<div class="hero-area-content">
+<h2>Informasi SPMB Tahun 2026/2027</h2>
+<p>Terwujudnya lulusan SMK Badrul Ulum yang beriman, berilmu, mandiri, kreatif, kompeten, dan siap kerja.</p>
+<a href="#" target="_blank" class="btn btn-utama">Klik Disini</a>
+</div>
+</div>
+<div class="hero-area-item">
+<img class="img-fluid" src="foto_beranda2.jpg" onerror="this.onerror=null; this.src='foto_beranda2.jpeg'; if(this.src.endsWith('jpeg')) { this.onerror=function(){this.src='foto_beranda2.png'}; }">
+<div class="hero-area-content">
+<h2>Informasi SPMB Tahun 2026/2027</h2>
+<p>Terwujudnya lulusan SMK Badrul Ulum yang beriman, berilmu, mandiri, kreatif, kompeten, dan siap kerja.</p>
+<a href="#" target="_blank" class="btn btn-utama">Klik Disini</a>
+</div>
+</div>
+<div class="hero-area-item">
+<img class="img-fluid" src="foto_beranda3.jpg" onerror="this.onerror=null; this.src='foto_beranda3.jpeg'; if(this.src.endsWith('jpeg')) { this.onerror=function(){this.src='foto_beranda3.png'}; }">
+<div class="hero-area-content">
+<h2>Informasi SPMB Tahun 2026/2027</h2>
+<p>Terwujudnya Insan yang Religius, Berkarakter, Kreatif, Terampil, dan Berwawasan Global</p>
+<a href="#" target="_blank" class="btn btn-utama">Klik Disini</a>
+</div>
+</div>
+<div class="hero-area-item">
+<img class="img-fluid" src="foto_beranda4.jpg" onerror="this.onerror=null; this.src='foto_beranda4.jpeg'; if(this.src.endsWith('jpeg')) { this.onerror=function(){this.src='foto_beranda4.png'}; }">
+<div class="hero-area-content">
+<h2>Informasi SPMB Tahun 2026/2027</h2>
+<p>Terwujudnya Insan yang Religius, Berkarakter, Kreatif, Terampil, dan Berwawasan Global</p>
+<a href="#" target="_blank" class="btn btn-utama">Klik Disini</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="sambutan">
+<div class="container">
+<h3>Profil Sekolah</h3>
+<div class="row">
+<div class="col-md-6">
+<div class="video-wrapper">
+<a href="https://www.youtube.com/@LpiBadrululum" target="_blank" class="youtube-overlay"></a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VZMJea9ntVU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+<div class="col-md-6">
+<h3>Sambutan Kepala Sekolah</h3>
+<p style="font-size: 14px!important;"><div style="color: rgb(0, 0, 0);">Assalamu'alaikum Wr. Wb.</div><div style="color: rgb(0, 0, 0);"><br></div><div style="color: rgb(0, 0, 0); text-align: justify;"><div>Salam sejahtera dan tetap semangat. Selamat datang di website SMK Badrul Ulum</div><div><br></div><div>Sebagai media informasi dan komunikasi web SMK Badrul Ulum dibangun dan dikembangkan dalam rangka meningkatkan layanan sekolah kepada peserta didik, orang tua, dan masyarakat. Kualitas layanan menjadi salah satu misi sekolah dan kaitannya dengan transparansi dan akuntabilitas sekolah.</div><div><br></div><div>Melaksanakan amanah sebagai pimpinan di SMK Badrul Ulum, harapan...</p>
+<a href="#" class="btn btn-utama">Baca Selengkapnya</a>
+</div>
+</div> <!-- .row -->
+</div> <!-- .container -->
+</section> <!-- #sambutan -->
+
+<section id="visi-misi" style="background-color: #f8f9fa; padding: 60px 0;">
+<div class="container">
+<div class="section-title">
+<h2 class="text-center" style="margin-bottom: 40px;">Visi, Misi & Tujuan</h2>
+</div>
+<div class="row">
+    <!-- VISI -->
+    <div class="col-md-12 mb-4">
+        <div class="card shadow-sm border-0" style="border-radius: 10px;">
+            <div class="card-body text-center p-4">
+                <h4 class="card-title font-weight-bold" style="color: #0d47a1;"><i class="fas fa-eye"></i> VISI</h4>
+                <p class="card-text lead mt-3" style="font-size: 1.1rem;">Menghasilkan lulusan yang unggul dalam IPTEK, IMTAQ, siap mengisi dunia usaha / dunia industri dan siap mandiri.</p>
+            </div>
+        </div>
+    </div>
+    <!-- MISI -->
+    <div class="col-md-6 mb-4">
+        <div class="card shadow-sm border-0 h-100" style="border-radius: 10px;">
+            <div class="card-body p-4">
+                <h4 class="card-title font-weight-bold" style="color: #0d47a1;"><i class="fas fa-bullseye"></i> MISI</h4>
+                <ul class="list-unstyled mt-3" style="line-height: 1.8;">
+                    <li class="mb-2"><i class="fas fa-check text-success mr-2"></i> Mewujudkan lulusan yang terampil dalam teknologi.</li>
+                    <li class="mb-2"><i class="fas fa-check text-success mr-2"></i> Mewujudkan lulusan berakhlaqul karimah.</li>
+                    <li class="mb-2"><i class="fas fa-check text-success mr-2"></i> Mewujudkan lulusan yang siap mengisi lowongan kerja pada era industrialisasi Madura.</li>
+                    <li class="mb-2"><i class="fas fa-check text-success mr-2"></i> Mewujudkan lulusan yang memiliki kemampuan untuk mandiri.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- TUJUAN -->
+    <div class="col-md-6 mb-4">
+        <div class="card shadow-sm border-0 h-100" style="border-radius: 10px;">
+            <div class="card-body p-4">
+                <h4 class="card-title font-weight-bold" style="color: #0d47a1;"><i class="fas fa-flag-checkered"></i> TUJUAN</h4>
+                <ol class="mt-3 pl-3" style="line-height: 1.8; text-align: justify;">
+                    <li class="mb-2">Mempersiapkan peserta didik agar menjadi manusia produktif, mampu bekerja mandiri mengisi lowongan pekerjaan yang ada di Dunia Usaha / Dunia Industri sebagai tenaga kerja tingkat menengah sesuai dengan kompetensi dalam program keahlian pilihannya.</li>
+                    <li class="mb-2">Membekali peserta didik agar mampu memilih karir, ulet dan gigih dalam berkompetisi bereksplorasi dilingkungan kerja dan mengembangkan sikap professional dalam bidang keahlian yang diminatinya.</li>
+                    <li class="mb-2">Membekali peserta didik dengan ilmu pengetahuan, teknologi, dan seni agar mampu mengembangkan diri dikemudian hari baik secara mandiri maupun melalui jenjang pendidikan yang lebih tinggi.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+<section id="berita">
+<div class="container">
+<div class="section-title">
+<h2>Berita Terbaru</h2>
+</div>
+<div class="section-body">
+<div class="row">
+<div class="col-lg-4 col-md-6 col-sm-12 col-12">
+<div class="section-thumbnail">
+<a href="#"><img src="pemberian_haadianclassmeting.jpeg"></a>
+<div class="tanggal">
+<span class="tgl">20</span>
+<span class="tgl-2">Sep 2026</span>
+</div>
+</div>
+<div class="section-content">
+<a href="#">
+<h3>Pemberian Hadiah Classmeeting</h3>
+</a>
+<p>Pemberian hadiah untuk pemenang lomba Classmeeting sebagai apresiasi...<a href="#" class="more"> [detil..]</a></p>
+</div>
+<div class="section-meta">
+<a href="#">Akademik</a>
+<a href="#">Admin</a>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-12">
+<div class="section-thumbnail" style="height: auto !important;">
+<a href="#" style="display: block; width: 100%;"><img src="pendaftaran_siswabaru.png" style="position: static !important; height: auto !important; width: 100% !important; object-fit: contain !important;" onerror="this.onerror=null; this.src='pendaftaran_siswabaru.jpeg'; if(this.src.endsWith('jpeg')) { this.onerror=function(){this.src='pendaftaran_siswabaru.png'}; }"></a>
+<div class="tanggal">
+<span class="tgl">22</span>
+<span class="tgl-2">May 2026</span>
+</div>
+</div>
+<div class="section-content">
+<a href="#">
+<h3>PENGUMUMAN SPMB SMK BADRUL ULUM 2026/2027 </h3>
+</a>
+<p>Informasi & Kontak Panitia: WA Panitia SMK...<a href="#" class="more"> [detil..]</a></p>
+</div>
+<div class="section-meta">
+<a href="#">Akademik</a>
+<a href="#">Admin</a>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-12">
+<div class="section-thumbnail">
+<a href="#"><img src="foto_beranda3.jpg" onerror="this.onerror=null; this.src='foto_beranda3.jpeg'; if(this.src.endsWith('jpeg')) { this.onerror=function(){this.src='foto_beranda3.png'}; }"></a>
+<div class="tanggal">
+<span class="tgl">25</span>
+<span class="tgl-2">Apr 2026</span>
+</div>
+</div>
+<div class="section-content">
+<a href="#">
+<h3>Acara Bimbingan Teknis Literasi Numerasi SMK Badrul Ulum</h3>
+</a>
+<p>Kegiatan Bimbingan Teknis Literasi dan Numerasi bagi siswa SMK Badrul Ulum...<a href="#" class="more"> [detil..]</a></p>
+</div>
+<div class="section-meta">
+<a href="#">Akademik</a>
+<a href="#">Admin</a>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-12">
+<div class="section-thumbnail">
+<a href="#"><img src="foto_ujianTKA.jpg" onerror="this.onerror=null; this.src='foto_ujianTKA.jpeg'; if(this.src.endsWith('jpeg')) { this.onerror=function(){this.src='foto_ujianTKA.png'}; }"></a>
+<div class="tanggal">
+<span class="tgl">09</span>
+<span class="tgl-2">Nov 2025</span>
+</div>
+</div>
+<div class="section-content">
+<a href="#">
+<h3>Kegiatan Sumatif Akhir Tahun (SAT) SMK Badrul Ulum</h3>
+</a>
+<p>Pelaksanaan Kegiatan Sumatif Akhir Tahun (SAT) bagi seluruh siswa...<a href="#" class="more"> [detil..]</a></p>
+</div>
+<div class="section-meta">
+<a href="#">Akademik</a>
+<a href="#">Admin</a>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-12">
+<div class="section-thumbnail">
+<a href="#"><img src="pelantikan_osis.jpg" onerror="this.onerror=null; this.src='pelantikan_osis.jpeg'; if(this.src.endsWith('jpeg')) { this.onerror=function(){this.src='pelantikan_osis.png'}; }"></a>
+<div class="tanggal">
+<span class="tgl">16</span>
+<span class="tgl-2">Jul 2026</span>
+</div>
+</div>
+<div class="section-content">
+<a href="#">
+<h3>Acara Pelantikan OSIS 2026-2027</h3>
+</a>
+<p>Pelaksanaan acara pelantikan pengurus OSIS SMK Badrul Ulum masa bakti 2026-2027...<a href="#" class="more"> [detil..]</a></p>
+</div>
+<div class="section-meta">
+<a href="#">Akademik</a>
+<a href="#">Admin</a>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-12">
+<div class="section-thumbnail">
+<a href="#"><img src="kado_hariguru.jpg" onerror="this.onerror=null; this.src='kado_hariguru.jpeg'; if(this.src.endsWith('jpeg')) { this.onerror=function(){this.src='kado_hariguru.png'}; }"></a>
+<div class="tanggal">
+<span class="tgl">25</span>
+<span class="tgl-2">Nov 2026</span>
+</div>
+</div>
+<div class="section-content">
+<a href="#">
+<h3>Pemberian Kado Hari Guru SMK Badrul Ulum</h3>
+</a>
+<p>Siswa-siswi SMK Badrul Ulum memberikan kado spesial kepada para guru sebagai bentuk apresiasi...<a href="#" class="more"> [detil..]</a></p>
+</div>
+<div class="section-meta">
+<a href="#">Akademik</a>
+<a href="#">Admin</a>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-12">
+<div class="section-thumbnail">
+<a href="#"><img src="foto alam.jpg" onerror="this.onerror=null; this.src='foto alam.jpeg'; if(this.src.endsWith('jpeg')) { this.onerror=function(){this.src='foto alam.png'}; }"></a>
+<div class="tanggal">
+<span class="tgl">25</span>
+<span class="tgl-2">Mar 2026</span>
+</div>
+</div>
+<div class="section-content">
+<a href="#">
+<h3>Kegiatan Peduli Lingkungan dan Cinta Alam</h3>
+</a>
+<p>Siswa-siswi SMK Badrul Ulum mengadakan kegiatan peduli lingkungan dan penanaman pohon untuk menumbuhkan rasa cinta terhadap kelestarian alam...<a href="#" class="more"> [detil..]</a></p>
+</div>
+<div class="section-meta">
+<a href="#">Non Akademik</a>
+<a href="#">Admin</a>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-12">
+<div class="section-thumbnail">
+<a href="#"><img src="pembelajaran.jpeg" onerror="this.onerror=null; this.src='foto pembelajaran.jpeg'; if(this.src.endsWith('jpeg')) { this.onerror=function(){this.src='foto pembelajaran.png'}; }"></a>
+<div class="tanggal">
+<span class="tgl">10</span>
+<span class="tgl-2">Agt 2026</span>
+</div>
+</div>
+<div class="section-content">
+<a href="#">
+<h3>Kegiatan Pembelajaran Interaktif dan Inovatif</h3>
+</a>
+<p>Suasana kegiatan belajar mengajar di SMK Badrul Ulum yang interaktif, aplikatif, dan menyenangkan untuk memacu semangat berprestasi siswa...<a href="#" class="more"> [detil..]</a></p>
+</div>
+<div class="section-meta">
+<a href="#">Akademik</a>
+<a href="#">Admin</a>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12 col-12">
+<div class="section-thumbnail">
+<a href="#"><img src="peingatan muulid.jpg" onerror="this.onerror=null; this.src='peingatan muulid.jpeg'; if(this.src.endsWith('jpeg')) { this.onerror=function(){this.src='peingatan muulid.png'}; }"></a>
+<div class="tanggal">
+<span class="tgl">12</span>
+<span class="tgl-2">Rabiul Awal</span>
+</div>
+</div>
+<div class="section-content">
+<a href="#">
+<h3>Peringatan Maulid Nabi SMK Badrul Ulum</h3>
+</a>
+<p>Acara peringatan Maulid Nabi Muhammad SAW yang diselenggarakan dengan khidmat di SMK Badrul Ulum...<a href="#" class="more"> [detil..]</a></p>
+</div>
+<div class="section-meta">
+<a href="#">Non Akademik</a>
+<a href="#">Admin</a>
+</div>
+</div>
+</div> <!-- .row -->
+</div>
+<div class="tombol-selengkapnya">
+<a href="#" class="btn btn-more">Lihat Berita Lainnya</a>
+</div>
+</div> <!-- .continer -->
+</section> <!-- section #berita -->
+<section id="tenaga-pendidik">
+<div class="container">
+<div class="section-title">
+<h2>Foto / Ekskul</h2>
+</div>
+<div class="section-body">
+<div id="slider-tools-1"></div>
+<div class="owl-carousel" id="tenaga-pendidik-slider">
+<div class="section-item-slider">
+<a href="lari.jpg" data-lightbox="fotoekskul" data-title="LARI PAGI"><img class="foto-guru" src="lari.jpg" onerror="this.onerror=null; this.src='lari.jpeg'; if(this.src.endsWith('jpeg')) { this.onerror=function(){this.src='lari.png'}; }"></a>
+<div class="section-item-caption">
+<a href="#">
+<h5>LARI PAGI</h5>
+</a>
+<h6>kegiatan-lari-pagi</h6>
+</div>
+</div>
+<div class="section-item-slider">
+<a href="jjs1.jpg" data-lightbox="fotoekskul" data-title="OLAHRAGA LOMPAT JAUH"><img class="foto-guru" src="jjs1.jpg" onerror="this.onerror=null; this.src='jjs1.jpeg'; if(this.src.endsWith('jpeg')) { this.onerror=function(){this.src='jjs1.png'}; }"></a>
+<div class="section-item-caption">
+<a href="#">
+<h5>OLAHRAGA LOMPAT JAUH</h5>
+</a>
+<h6>olahraga-lompat-jauh</h6>
+</div>
+</div>
+<div class="section-item-slider">
+<a href="JJS.jpg" data-lightbox="fotoekskul" data-title="JJS"><img class="foto-guru" src="JJS.jpg" onerror="this.onerror=null; this.src='JJS.jpeg'; if(this.src.endsWith('jpeg')) { this.onerror=function(){this.src='JJS.png'}; }"></a>
+<div class="section-item-caption">
+<a href="#">
+<h5>JJS</h5>
+</a>
+<h6>kegiatan-jjs-smk-badrul-ulum</h6>
+</div>
+</div>
+<div class="section-item-slider">
+<a href="https://sma.sekolahjagakarsa.sch.id/fotogaleri/1738854614_40a89e3be2038bfc645e.jpeg" data-lightbox="fotoekskul" data-title="SEPAK BOLA"><img class="foto-guru" src="https://sma.sekolahjagakarsa.sch.id/fotogaleri/1738854614_40a89e3be2038bfc645e.jpeg"></a>
+<div class="section-item-caption">
+<a href="#">
+<h5>SEPAK BOLA</h5>
+</a>
+<h6>tim-sepak-bola-smk-badrul-ulum</h6>
+</div>
+</div>
+<div class="section-item-slider">
+<a href="https://sma.sekolahjagakarsa.sch.id/fotogaleri/1738854589_b7c3dd88dbef8d9de204.jpg" data-lightbox="fotoekskul" data-title="PASKIBRA"><img class="foto-guru" src="https://sma.sekolahjagakarsa.sch.id/fotogaleri/1738854589_b7c3dd88dbef8d9de204.jpg"></a>
+<div class="section-item-caption">
+<a href="#">
+<h5>PASKIBRA</h5>
+</a>
+<h6>tim-paskibra-smk-badrul-ulum</h6>
+</div>
+</div>
+<div class="section-item-slider">
+<a href="https://sma.sekolahjagakarsa.sch.id/fotogaleri/1738854567_521ff9c2a6189b2f6d29.jpeg" data-lightbox="fotoekskul" data-title="BAND SEKOLAH"><img class="foto-guru" src="https://sma.sekolahjagakarsa.sch.id/fotogaleri/1738854567_521ff9c2a6189b2f6d29.jpeg"></a>
+<div class="section-item-caption">
+<a href="#">
+<h5>BAND SEKOLAH</h5>
+</a>
+<h6>latihan-band-di-studio-musik-sekolah</h6>
+</div>
+</div>
+<div class="section-item-slider">
+<a href="https://sma.sekolahjagakarsa.sch.id/fotogaleri/1738854541_61ef3ecabc4b4c7568fb.jpg" data-lightbox="fotoekskul" data-title="PRAMUKA"><img class="foto-guru" src="https://sma.sekolahjagakarsa.sch.id/fotogaleri/1738854541_61ef3ecabc4b4c7568fb.jpg"></a>
+<div class="section-item-caption">
+<a href="#">
+<h5>PRAMUKA</h5>
+</a>
+<h6>kegiatan-pramuka-setiap-hari-rabu</h6>
+</div>
+</div>
+<div class="section-item-slider">
+<a href="https://sma.sekolahjagakarsa.sch.id/fotogaleri/1738854516_74ef55298da1559302d6.jpeg" data-lightbox="fotoekskul" data-title="FUTSAL"><img class="foto-guru" src="https://sma.sekolahjagakarsa.sch.id/fotogaleri/1738854516_74ef55298da1559302d6.jpeg"></a>
+<div class="section-item-caption">
+<a href="#">
+<h5>FUTSAL</h5>
+</a>
+<h6>tim-futsal-smk-badrul-ulum</h6>
+</div>
+</div>
+</div>
+</div>
+<div class="tombol-selengkapnya">
+<a href="#" class="btn btn-more">Lihat Foto Lainnya</a>
+</div>
+</div>
+</section>
+<section id="galeri">
+<div class="container">
+<div class="section-title">
+<h2>Video Dokumentasi</h2>
+</div>
+<div class="section-body">
+<div id="slider-tools-3"></div>
+<div class="owl-carousel" id="galeri-slider">
+<div class="section-item-slider">
+<div class="video-wrapper video-galeri">
+<a href="https://www.youtube.com/@LpiBadrululum" target="_blank" class="youtube-overlay"></a>
+<iframe src="https://www.youtube.com/embed/weAQgB0dWuk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="section-item-caption">
+<a href="#">
+<h5>PEMILU OSIS- SUARA DEMOKRASI- SMK BADRUL ULUM</h5>
+</a>
+<h6>PEMILU OSIS</h6>
+</div>
+</div>
+<div class="section-item-slider">
+<div class="video-wrapper video-galeri">
+<a href="https://www.youtube.com/@LpiBadrululum" target="_blank" class="youtube-overlay"></a>
+<iframe src="https://www.youtube.com/embed/_X0kMRjOfnI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="section-item-caption">
+<a href="#">
+<h5>P5 SUARA DEMOKRASI FASE F SMK BADRUL ULUM</h5>
+</a>
+<h6>P5 SUARA DEMOKRASI FASE F SMK BADRUL ULUM</h6>
+</div>
+</div>
+<div class="section-item-slider">
+<div class="video-wrapper video-galeri">
+<a href="https://www.youtube.com/@LpiBadrululum" target="_blank" class="youtube-overlay"></a>
+<iframe src="https://www.youtube.com/embed/tHYUS8iGM8g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="section-item-caption">
+<a href="#">
+<h5>Outing Class SMK Badrul</h5>
+</a>
+<h6>Outing Class SMK Badrul</h6>
+</div>
+</div>
+<div class="section-item-slider">
+<div class="video-wrapper video-galeri">
+<a href="https://www.youtube.com/@LpiBadrululum" target="_blank" class="youtube-overlay"></a>
+<iframe src="https://www.youtube.com/embed/D2YP_m_Pxrk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="section-item-caption">
+<a href="#">
+<h5>HARI GIZI</h5>
+</a>
+<h6>JUARA VLOG</h6>
+</div>
+</div>
+<div class="section-item-slider">
+<div class="video-wrapper video-galeri">
+<a href="https://www.youtube.com/@LpiBadrululum" target="_blank" class="youtube-overlay"></a>
+<iframe src="https://www.youtube.com/embed/oErACky5uLo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="section-item-caption">
+<a href="#">
+<h5>OUTINGCLASS</h5>
+</a>
+<h6>MUSEUM NASIONAL</h6>
+</div>
+</div>
+<div class="section-item-slider">
+<div class="video-wrapper video-galeri">
+<a href="https://www.youtube.com/@LpiBadrululum" target="_blank" class="youtube-overlay"></a>
+<iframe src="https://www.youtube.com/embed/M_68Rm5FzHU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="section-item-caption">
+<a href="#">
+<h5>STUDY TOUR</h5>
+</a>
+<h6>Kunjungan ke Daerah Istimewa Yogyakarta</h6>
+</div>
+</div>
+</div>
+</div>
+<div class="tombol-selengkapnya">
+<a href="https://www.youtube.com/@LpiBadrululum" target="_blank" class="btn btn-more">Lihat Video Lainnya di Channel Kami</a>
+</div>
+</div>
+</section><br><br><br>
+<div id="scroll-to-top">
+<a href="#topbar"><i class="fas fa-angle-up"></i></a>
+</div>
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-lg-5 col-md-12 col-sm-12">
+<div class="footer-col">
+<h2>SMK Badrul Ulum</h2>
+<p class="tentang">Terwujudnya Insan yang Religius, Berkarakter, Kreatif, Terampil, dan Berwawasan Global. Maju Bersama, Bersama Kita Maju!</p>
+<ul class="sosmed">
+<li><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="https://tiktok.com/@smk.badrul.ulum0" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+<li><a href="https://www.youtube.com/@LpiBadrululum" target="_blank"><i class="fab fa-youtube"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12">
+<div class="footer-col">
+<h2>Kontak Kami</h2>
+<p class="alamat">Lembaga Pendidikan Islam Badrul Ulum</p>
+<ul class="kontak">
+<li><i class="fas fa-map-marker-alt"></i> Jl. Pancong Du'uman, Desa Waru Timur, Kecamatan Waru, Kabupaten Pamekasan, Jawa Timur 69353</li>
+<li><i class="fas fa-phone"></i> Telp/Fax : 081217539384</li>
+<li><i class="fas fa-envelope"></i> Email : smkbadrululum@gmail.com</li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-12 col-sm-12">
+<div class="footer-col">
+<h2>Profil</h2>
+<ul class="footer-nav">
+<li><a href="#">Sejarah</a></li>
+<li><a href="visi_misi_smk.html">Visi dan Misi</a></li>
+<li><a href="#">Struktur Akademik</a></li>
+<li><a href="#">Struktur Tendik</a></li>
+<li><a href="#">Struktur Komite</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div> <!-- .container -->
+<div class="footer-copyright">
+<div class="container text-center">
+&copy; 2026 | SMK BADRUL ULUM </div>
+</div>
+</footer>
+<script src="https://sma.sekolahjagakarsa.sch.id//template/frontend/assets/lightbox/js/lightbox-plus-jquery.min.js"></script>
+<script src="https://sma.sekolahjagakarsa.sch.id//template/frontend/assets/js/jquery-3.3.1.slim.min.js"></script>
+<script src="https://sma.sekolahjagakarsa.sch.id//template/frontend/assets/js/bootstrap.min.js"></script>
+<script src="https://sma.sekolahjagakarsa.sch.id//template/frontend/assets/js/owl.carousel.min.js"></script>
+<script src="https://sma.sekolahjagakarsa.sch.id//template/frontend/assets/js/main.js"></script>
+<script src="https://sma.sekolahjagakarsa.sch.id//template/frontend/assets/datatables-1.10.22/1.10.22/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+<script src="https://sma.sekolahjagakarsa.sch.id//template/frontend/assets/datatables-1.10.22/1.10.22/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+<script>
+$(function() {
+    // Memperhalus transisi foto banner dan autoplay
+    setTimeout(function() {
+        var owl = $('#hero-area-slider');
+        
+        // 1. Hapus inisialisasi bawaan agar bisa kita atur kecepatannya
+        owl.trigger('destroy.owl.carousel');
+        
+        // 2. Inisialisasi ulang dengan parameter transisi yang lebih halus
+        owl.owlCarousel({
+             items: 1,
+             loop: true,
+             autoplay: true,
+             autoplayTimeout: 4000,    // Waktu tunggu setiap foto (4 detik)
+             autoplaySpeed: 1500,      // Kecepatan transisi bergeser (1.5 detik, sangat halus)
+             smartSpeed: 1500,         // Memperhalus pergeseran saat di-swipe/drag
+             navSpeed: 1500,
+             dotsSpeed: 1500,
+             nav: false,               
+             dots: true
+        });
+    }, 800);
+
+$('#example1').DataTable()
+$('#example3').DataTable()
+$('#example4').DataTable()
+$('#example5').DataTable()
+$('#example6').DataTable()
+$('#example7').DataTable()
+$('#example8').DataTable()
+$('#example2').DataTable({
+'paging': true,
+'lengthChange': false,
+'searching': false,
+'ordering': true,
+'info': true,
+'autoWidth': false
+})
+})
+</script>
+</body>
+</html>
