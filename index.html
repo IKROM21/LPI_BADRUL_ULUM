@@ -240,7 +240,7 @@
     </nav>
 
     <!-- 1. Hero Section -->
-    <section id="hero" class="relative h-screen min-h-[600px] w-full overflow-hidden hero-container" x-data="{ activeSlide: 0, slides: ['foto_beranda1.jpg', 'foto_beranda2.jpg', 'foto_beranda3.jpg', 'foto_beranda4.jpg'], init() { setInterval(() => { this.activeSlide = (this.activeSlide + 1) % this.slides.length }, 5000) } }">
+    <section id="hero" class="relative h-screen min-h-[600px] w-full overflow-hidden hero-container" x-data="{ activeSlide: 0, slides: ['logo-lpi.png'], init() { setInterval(() => { this.activeSlide = (this.activeSlide + 1) % this.slides.length }, 5000) } }">
         <!-- Slides -->
         <template x-for="(slide, index) in slides" :key="index">
             <div class="absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out hero-bg"
@@ -474,7 +474,7 @@
             </div>
 
             <!-- SMK Card -->
-            <div class="flip-card-container w-full" onclick="triggerHeroTransition(this, 'SMK')">
+            <div class="flip-card-container w-full" onclick="window.location.href='index_smk.html'">
                 <div class="flip-card-inner">
                     <!-- Front -->
                     <div class="flip-card-front">
@@ -489,7 +489,7 @@
                         <h3 class="text-2xl font-bold mb-3 relative z-10">Program SMK</h3>
                         <p class="text-blue-100 text-sm mb-6 relative z-10 px-4 leading-relaxed">Dapatkan rincian
                             jurusan, sarana praktikum lengkap, peluang karir, dan kerjasama industri.</p>
-                        <button
+                        <a href="index_smk.html"
                             class="bg-white text-blue-600 border-2 border-white px-6 py-2 rounded-full font-bold shadow-lg hover:bg-transparent hover:text-white hover:-translate-y-1 transition-all duration-300 inline-flex items-center relative z-10 group">
                             Lihat Detail <svg
                                 class="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform duration-300"
@@ -497,7 +497,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                             </svg>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
